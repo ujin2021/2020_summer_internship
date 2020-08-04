@@ -1,5 +1,5 @@
 # 2020_summer_internship
-주식회사 키즈팩토리 <br>
+<a href='https://kidsfactory.net/'>주식회사 키즈팩토리</a> <br>
 db 설계 <br>
 #### 1일차
 * csv 파일 mysql 적용시키기 (mysql workbench 사용)
