@@ -1,7 +1,7 @@
 # 2020_summer_internship
 :office: <a href='https://kidsfactory.net/'>주식회사 키즈팩토리</a> <br>
-:date: 기간 : 2020.08.03 ~ 2020.08.31
-:hourglass_flowing_sand: AM 10:00 ~ PM 7:00
+:date: 기간 : 2020.08.03 ~ 2020.08.31 <br>
+:hourglass_flowing_sand: AM 10:00 ~ PM 7:00 <br>
 :pencil:배우고 있는것... db 설계, express.js로 서버 구축하기 <br> <br>
 #### 1일차
 * csv 파일 mysql 적용시키기 (mysql workbench 사용)
