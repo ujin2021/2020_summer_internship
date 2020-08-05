@@ -1,6 +1,6 @@
 # 2020_summer_internship
-<a href='https://kidsfactory.net/'>주식회사 키즈팩토리</a> <br>
-db 설계 <br>
+:office: <a href='https://kidsfactory.net/'>주식회사 키즈팩토리</a> <br>
+:pencil:배우고 있는것... db 설계, express.js로 서버 구축하기 <br> <br>
 #### 1일차
 * csv 파일 mysql 적용시키기 (mysql workbench 사용)
 * db 이론공부 (https://victorydntmd.tistory.com/125)
@@ -11,3 +11,10 @@ db 설계 <br>
 * project db 설계
 * feedback 받기 위해 구현한 것 정리, 질문할 것 정리(+ 크롤링을 언제 하는게 적합? 어떤정보를 갖고올지)
 * 정보 크롤링하여 db에 저장하기
+
+#### 3일차
+* 개발과장님 피드백 및 질문
+* node.js 공부(생활코딩 node.js pm2 사용법까지)
+<br>
+내일할 것 : node.js 강의마저듣기(CRUD구현)(2시간정도) + express.js 강의듣기(2시간정도) <br>
+간단한 서버 구축하고 express.js로 post, get코드 구현해보기(postman으로 작동잘되는지 확인하기) <br>
