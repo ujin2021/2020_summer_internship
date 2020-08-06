@@ -18,7 +18,7 @@ module.exports = {
 		var list = '<ul>';
 		var i = 0;
 		while(i < filelist.length){ //파일 갯수 만큼
-			list += `<li><a href="/?id=${filelist[i]}">${filelist[i]}</a></li>`;
+			list += `<li><a href="/page/${filelist[i]}">${filelist[i]}</a></li>`;
 			i++;
 		}
 		list += '</ul>';
