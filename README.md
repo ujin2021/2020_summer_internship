@@ -18,6 +18,9 @@
 #### 3일차
 * 개발과장님 피드백 및 질문
 * node.js 공부(생활코딩 node.js pm2 사용법까지)
+
+#### 4일차
+* node.js 강의 글삭제 기능완성까지(CRUD 구현 clear)
 <br>
 내일할 것 : node.js 강의마저듣기(CRUD구현)(2시간정도) + express.js 강의듣기(2시간정도) <br>
 간단한 서버 구축하고 express.js로 post, get코드 구현해보기(postman으로 작동잘되는지 확인하기) <br>
