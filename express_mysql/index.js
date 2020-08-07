@@ -26,13 +26,13 @@ app.post('/signup/', function(req, res){
     console.log(req.body);
     var email = req.body["email"];
     var username = req.body["username"];
-    var sql = 'INSERT INTO user(email, username) VALUES(?, ?);'
+    var sql = 'INSERT INTO user(email, username) VALUES(?, ?);' // sql문을 객체로 만들까
     var params = [email, username];
     conn.query(sql, params, function(err, rows, fields){
         if(err) console.log('err : ', err);
-        else{console.log('save data');}
+        else{console.log('save success');}
     });
-    res.json('signup success');
+    res.status(201).json('signup success');
 });
 
 app.listen(3000, function(){
