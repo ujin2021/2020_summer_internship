@@ -4,6 +4,7 @@
 
 # user custum
 db_setting.py
+database.js
 
 ### Database ###
 *.accdb
