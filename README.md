@@ -24,3 +24,7 @@
 <br>
 내일할 것 : node.js 강의마저듣기(CRUD구현)(2시간정도) + express.js 강의듣기(2시간정도) <br>
 간단한 서버 구축하고 express.js로 post, get코드 구현해보기(postman으로 작동잘되는지 확인하기) <br>
+
+#### 5일차
+* 프로젝트 시작 <br>
+> <a href='https://github.com/ujin2021/internship_project.git'>프로젝트</a>
