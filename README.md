@@ -97,6 +97,7 @@ exports.emailCheckAPI = async (req, res) => { <br>
 
 ##### mysql middleware 설정
 
+* 만들어진 pool은 res에 넣어준다.
 * mysql 모듈은 현재 미들웨어로 사용을 못한다(?) -> mysql2 를 사용
 * middle ware 설정방법은 코드 참고
 * middel ware는 app에서 app.use로 구현한다(router에서 x)
