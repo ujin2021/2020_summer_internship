@@ -14,6 +14,7 @@
 * feedback 받기 위해 구현한 것 정리, 질문할 것 정리(+ 크롤링을 언제 하는게 적합? 어떤정보를 갖고올지)
 * 정보 크롤링하여 db에 저장하기
 * :heavy_exclamation_mark: 설계시 FK를 연결해놓을 필요가 없었다(지금 하고있는 건 하드웨어적인 fk)
+> https://m.blog.naver.com/PostView.nhn?blogId=hist0134&logNo=220249120040&proxyReferer=https:%2F%2Fwww.google.com%2F
 
 #### 3일차
 * 개발과장님 피드백 및 질문
