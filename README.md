@@ -44,6 +44,8 @@
   * 크롤링한 정보들을 db에 저장해놓는다(실시간으로 하면 i/o 처리량이 많아 서버가 죽는다) 크롤링되는 주기를 정해놓고 바뀐정보가 있으면 업데이트한다.
   > https://happist.com/553442/%EC%84%9C%EB%B2%84%EC%97%90%EC%84%9C-%EC%9E%90%EB%8F%99-%EC%8B%A4%ED%96%89%EC%9D%84-%EA%B0%80%EB%8A%A5%EC%BC%80-%ED%95%B4%EC%A3%BC%EB%8A%94-crontab%ED%81%AC%EB%A1%A0%ED%83%AD-%EC%84%A4%EC%A0%95
   
+  :boom::boom: axios cross domain 문제일수도 있으니 header에 cross doamin 추가해서 테스트해보기!!
+  
 ##### code
 
 1. 내코드<br>
@@ -111,3 +113,17 @@ exports.emailCheckAPI = async (req, res) => { <br>
 * nodemon을 사용한다
 > nodemon 설치 : $ npm install -g nodemon <br>
 > nodemon 실행 : $ nodemon app.js
+
+#### 9일차
+* 좋아요, 리뷰 db생성, insert 하는 코드 추가
+* 좋아요수, 리뷰수, 조회수, 리뷰별점평균 어디에 추가해야할지 몰라서 과장님께 질문!!
+
+#### ❤️피드백(db관련)
+* d로 시작하는건 무조건 하지말아야한다. Delete, Drop!! -> 지워버리면 나중에 통계 안낼꺼야?!
+* log로 시작하는 것은 절대 지우면 안된다. 기록같은것. 삼국사기같은거 안없애잖아?!
+* table이름은 복수로(users, categories, ...) 여러개를 저장하는 거니까
+* column이름 줄이지 말고 다 풀어쓰기(테이블 이름도그렇고 네이밍을 잘해야 인수인계를 할 때, 남에게 db관리를 맡길 때 편하다)
+* column 이름은 table이름단수_이름. 예시)table : users, column : user_email
+* pk도 나는 다 id로 통일했는데 그러면 헷갈릴 수 있다. table이 user면 user_no 처럼 테이블단수_no 이렇게 설정하자
+* 단순계산 같은것은 그냥 테이블을 따로만들지 않고 컬럼으로 넣어둔다(조회수, 하트수 등등) 따로 만들게 되면 긁어와야하니까
+* delete 를 절대하지말고(log를 남겨야함) remove를 하자 -> enable 컬럼을 테이블에 추가하여 0,1로 구현하자.
