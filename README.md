@@ -5,16 +5,16 @@
 :pencil:배우고 있는것... db 설계, express.js로 서버 구축하기 <br> <br>
 #### 1일차
 * csv 파일 mysql 적용시키기 (mysql workbench 사용)
-* db 이론공부 (https://victorydntmd.tistory.com/125)
-* db설계 연습(https://blog.advenoh.pe.kr/database/%EA%B4%80%EA%B3%84%ED%98%95-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%84%A4%EA%B3%84-%EB%B0%8F-%EA%B5%AC%EC%B6%95/)
-* project ux/ui 분석 후 db설계(참고:https://dionysus2074.tistory.com/105)
+* db 이론공부 (<a href="https://victorydntmd.tistory.com/125">참고</a>)
+* db설계 연습(<a href="https://blog.advenoh.pe.kr/database/%EA%B4%80%EA%B3%84%ED%98%95-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%84%A4%EA%B3%84-%EB%B0%8F-%EA%B5%AC%EC%B6%95/">참고</a>)
+* project ux/ui 분석 후 db설계(<a href="https://dionysus2074.tistory.com/105">참고</a>)
 
 #### 2일차
 * project db 설계
 * feedback 받기 위해 구현한 것 정리, 질문할 것 정리(+ 크롤링을 언제 하는게 적합? 어떤정보를 갖고올지)
 * 정보 크롤링하여 db에 저장하기
 * :heavy_exclamation_mark: 설계시 FK를 연결해놓을 필요가 없었다(지금 하고있는 건 하드웨어적인 fk)
-> https://m.blog.naver.com/PostView.nhn?blogId=hist0134&logNo=220249120040&proxyReferer=https:%2F%2Fwww.google.com%2F
+> <a href="https://m.blog.naver.com/PostView.nhn?blogId=hist0134&logNo=220249120040&proxyReferer=https:%2F%2Fwww.google.com%2F">참고</a>
 
 #### 3일차
 * 개발과장님 피드백 및 질문
@@ -42,7 +42,7 @@
   * 먼저 크롤링을 할 수 있는지 확실히 알아보고, 그에 따른 프로젝트 인원이 몇명이 필요할지, 어떻게 진행할지 등 사람들과 상의(애자일 방법론)
   * 스케줄러를 설정해놓아야 한다. -> 사람들이 최대한 사용안하는 시간에 크롤링 하도록(간격은 일주일에 한번정도)
   * 크롤링한 정보들을 db에 저장해놓는다(실시간으로 하면 i/o 처리량이 많아 서버가 죽는다) 크롤링되는 주기를 정해놓고 바뀐정보가 있으면 업데이트한다.
-  > https://happist.com/553442/%EC%84%9C%EB%B2%84%EC%97%90%EC%84%9C-%EC%9E%90%EB%8F%99-%EC%8B%A4%ED%96%89%EC%9D%84-%EA%B0%80%EB%8A%A5%EC%BC%80-%ED%95%B4%EC%A3%BC%EB%8A%94-crontab%ED%81%AC%EB%A1%A0%ED%83%AD-%EC%84%A4%EC%A0%95
+  > <a href="https://happist.com/553442/%EC%84%9C%EB%B2%84%EC%97%90%EC%84%9C-%EC%9E%90%EB%8F%99-%EC%8B%A4%ED%96%89%EC%9D%84-%EA%B0%80%EB%8A%A5%EC%BC%80-%ED%95%B4%EC%A3%BC%EB%8A%94-crontab%ED%81%AC%EB%A1%A0%ED%83%AD-%EC%84%A4%EC%A0%95"></a>
   
   :boom::boom: axios cross domain 문제일수도 있으니 header에 cross doamin 추가해서 테스트해보기!!
   
