@@ -48,48 +48,9 @@
   
 ##### code
 
-1. 내코드<br>
-  exports.emailCheckAPI = (req, res) => { <br>
-    console.log(req.body);<br>
-    let sql = 'SELECT * FROM user WHERE email=?'; // 중복검사 위한 sql<br>
-    let params = [req.body['email']];<br>
-    conn.query(sql, params, function(err, result){<br>
-        if(err) console.log(err);<br>
-        else{<br>
-            if(result.length === 0){<br>
-                var status = 201;<br>
-                var msg = 'New';<br>
-            }<br>
-            else{<br>
-                var status = 503;<br>
-                var msg = 'Exist';<br>
-            }<br>
-            res.status(status).json(msg);<br>
-        }<br>
-    });<br>
-}<br>
+1. <a href="https://gist.github.com/ujin2021/2f897ba534658d8c09c524cd9b23c5c0.js">내코드</a> <br>
 
-2. 과장님 코드 (내코드 기반으로 수정해주신 것)<br>
-exports.emailCheckAPI = async (req, res) => { <br>
-    let status = null<br>
-    let message = \`\`<br>
-    try {<br>
-        const params = [req.body['email']]<br>
-        const [result] = await res.pool.query(\`SELECT * FROM user WHERE email = ?\`, params)<br>
-        if (result.length === 0) {<br>
-            status = 200;<br>
-            message = \`가입 가능한 이메일 주소 입니다.\`<br>
-        } else {<br>
-            status = 400 <br>
-            message = \`이미 가입된 이메일 주소 입니다.\`<br>
-        }<br>
-        res.status(status).json(message)<br>
-    } catch (e) {<br>
-        console.error(e)<br>
-        status = 503<br>
-        res.status(status).json(e)<br>
-    }<br>
-}<br>
+2. <a href="https://gist.github.com/ujin2021/11ee92f548836af1e48d343c1e39f97a.js">과장님 코드 </a> (내코드 기반으로 수정해주신 것)<br>
 
 ❗️ 주의할것 <br>
 
