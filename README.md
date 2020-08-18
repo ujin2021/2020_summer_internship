@@ -36,7 +36,7 @@
 
 #### ❤️피드백(코드, mysql 연결 middleware 만들기, crawling)
 
-##### crawling
+##### 1) crawling
   
   * 크론탭서버를 먼저 구축해야함 (크롤링 api를 사용할 수 있는 곳들을 잘 알아봐야함. 잘못하면 한번 크롤링 하고 ip가 막힐 수 있다 -> 그럼 서버가 죽음)
   * 먼저 크롤링을 할 수 있는지 확실히 알아보고, 그에 따른 프로젝트 인원이 몇명이 필요할지, 어떻게 진행할지 등 사람들과 상의(애자일 방법론)
@@ -46,7 +46,7 @@
   
   :boom::boom: axios cross domain 문제일수도 있으니 header에 cross doamin 추가해서 테스트해보기!!
   
-##### code
+##### 2) code
 
 1. <a href="https://gist.github.com/ujin2021/2f897ba534658d8c09c524cd9b23c5c0.js">내코드</a> <br>
 
@@ -59,7 +59,7 @@
 * try catch 구문으로 작성할 것(웬만한 error은 출력되도록, 이렇게 안하면 error났을 때 서버가 죽는다)
 * js 파일이름에 보통 \_ (언더바)를 넣지 않는다.
 
-##### mysql middleware 설정
+##### 3) mysql middleware 설정
 
 * 만들어진 pool은 res에 넣어준다.
 * mysql 모듈은 현재 미들웨어로 사용을 못한다(?) -> mysql2 를 사용
@@ -68,7 +68,7 @@
 > $ npm uninstall mysql <br>
 > $ npm install --save mysql2
 
-##### 실행 프로그램
+##### 4) 실행 프로그램
 
 * pm2는 무중단(watch opt) -> 메모리를 많이 잡아먹는다
 * nodemon을 사용한다
