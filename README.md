@@ -48,9 +48,9 @@
   
 ##### 2) code
 
-1. <a href="https://gist.github.com/ujin2021/2f897ba534658d8c09c524cd9b23c5c0.js">내코드</a> <br>
+1. <a href="https://gist.github.com/2f897ba534658d8c09c524cd9b23c5c0.git">내코드</a> <br>
 
-2. <a href="https://gist.github.com/ujin2021/11ee92f548836af1e48d343c1e39f97a.js">과장님 코드 </a> (내코드 기반으로 수정해주신 것)<br>
+2. <a href="https://gist.github.com/11ee92f548836af1e48d343c1e39f97a.git">과장님 코드 </a> (내코드 기반으로 수정해주신 것)<br>
 
 ❗️ 주의할것 <br>
 
