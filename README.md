@@ -2,7 +2,7 @@
 :office: <a href='https://kidsfactory.net/'>주식회사 키즈팩토리</a> <br>
 :date: 기간 : 2020.08.03 ~ 2020.08.31 <br>
 :hourglass_flowing_sand: AM 10:00 ~ PM 7:00 <br>
-:pencil:배우고 있는것... db 설계, express.js로 서버 구축하기 <br> <br>
+:pencil:배우고 있는것... db 설계, express.js로 API  <br> <br>
 #### 1일차
 * csv 파일 mysql 적용시키기 (mysql workbench 사용)
 * db 이론공부 (<a href="https://victorydntmd.tistory.com/125">참고</a>)
@@ -97,3 +97,4 @@
 * jwt는 route.js에서 middleware 설정 -> req에 넣어준다. (내가 req로 받은것을 다시 넘겨줘야하니까)
 * 완전히 이해는 안되지만 어느정도 감은 옴..!
 
+#### db설계는 간단히. 어떻게 코드를 짤 것인가. -> 과연 이렇게 설계했을 때 간단히 select 나 join 할수 있는가?
