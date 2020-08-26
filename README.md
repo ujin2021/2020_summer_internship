@@ -109,3 +109,23 @@
 * 티켓 정보들(가격) 과 사용자가 가진 쿠폰을 모두 client에게 보내준다
 * 쿠폰을 사용할 수 있는지는(쿠폰의 요구조건에 맞는지) client측에서 판단
 => 모든걸 server가 처리할 수 없다! 유효성 검사 같은것은 클라이언트 측에서 
+
+#### ❤️피드백(코드관련-jwt, 암호화)
+* jwt 보통 access token + refresh token 
+=> access token은 만료일이 지정되어있다. refresh token은 db에 저장해놓는다(로그아웃시 사라지고 새로 로그인할 때 재발급. 암호화가 잘되어 있어야 한다.) <br>
+=> access token과 refresh 를 같이 보내고 만약 access가 만료되었다면 access token 재발급(만료되었으니까 어떤사용자인지 어떻게 판단?->refresh 로) <br>
+=> 자동로그인같은경우, app에 refresh token을 저장해두면 된다. <br>
+-> 어려운 내용... <br>
+* node(statless)는 session을 사용하기 힘들다
+=> single thread. 사람들이 많이 몰리면 느려질 수 있다. -> 새로운 컴퓨터로 서버를 열면 사용자는 다시로그인해야함
+* 비밀번호 암호화는 무조건 단방향.(절대 복호화 할 수 없게 해야한다.) => mysql password를 사용(여기선 secret key가 refresh 되기때문에 복호화 하기 어렵다.)
+
+#### ❤️피드백(앞으로의 공부방향에 대해서)
+* 계속 같은 함수들, 같은알고리즘만 짜니까 발전이 없다고 느껴진다. 클린코드 어떻게 해야할지
+=> boilerplate 를 만들어보기 <br>
+=> 조회수 가장높은것을 체크하는 api를 만들어보기 <br>
+=> awesome django boilerplate 키워드로 검색해보자 <br>
+=> 여러 사람의 코드를 찾아보면서 코드를 어떻게 짜는지 알아보자 <br>
+=> 여러 도서들을 읽어보자(개발에 대한) <br>
+=> 네이밍, restful api 작성법을 잘 숙지해놓자(http method도.. put을 써도 되는 것에 post를 쓰고있진 않은지..) <br>
+=> 알고리즘을 공부하자 <br>
